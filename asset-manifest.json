@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Gestionschool/static/css/main.3b85cf84.css",
+    "main.js": "/Gestionschool/static/js/main.11afbb8f.js",
+    "index.html": "/Gestionschool/index.html",
+    "main.3b85cf84.css.map": "/Gestionschool/static/css/main.3b85cf84.css.map",
+    "main.11afbb8f.js.map": "/Gestionschool/static/js/main.11afbb8f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b85cf84.css",
+    "static/js/main.11afbb8f.js"
+  ]
+}
