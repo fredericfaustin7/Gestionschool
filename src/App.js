@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+     <Router basename="/Gestionschool">
       <Routes>
         <Route path="/" element={<HeaderStudent />} />
         <Route path="/etudiant" element={<HeaderEleve />} />
