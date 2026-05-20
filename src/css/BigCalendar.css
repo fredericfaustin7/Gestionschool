@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----- Calendrier externe ----- */
+.react-calendar {
+  width: 100% !important;                     /* Le calendrier prend toute la largeur */
+  border: none !important;                    /* On enlève le contour */
+  font-family: "Inter", sans-serif !important;/* Police lisible et moderne */
+}
+
+/* ----- Titre du mois (le libellé du haut) ----- */
+.react-calendar_navigation_label_labelText {
+  font-weight: 600;                           /* Met en gras le titre du mois */
+}
+
+/* ----- Titre de jour actif (ex: "aujourd'hui") ----- */
+.react-calendar_title-active {
+  background-color: #C3EBFA !important;       /* Bleu clair pour marquer le jour */
+  color: black !important;
+}
+
+/* ----- Groupe de boutons gauche (mois/semaine/jour) → masqué ici ----- */
+.rbc-btn-group:first-child {
+  display: none !important;
+}
+
+/* ----- Libellé central de la toolbar (ex: "juin 2025") ----- */
+.rbc-toolbar-label {
+  text-align: right !important;
+  padding: 0 20px !important;
+}
+
+/* ----- Groupe de boutons à droite (navigation date) ----- */
+.rbc-btn-group:last-child {
+  font-size: 13px;
+}
+
+/* Boutons de navigation (suivant/précédent) */
+.rbc-btn-group:last-child button {
+  border: none;
+  background-color: #f1f0ff;
+  margin-left: 2px;
+}
+
+/* Bouton actif (ex: "semaine" sélectionné) */
+.rbc-toolbar button.rbc-active {
+  background-color: #dbdafe;
+  box-shadow: none;
+}
+
+/* ----- Vue horaire principale ----- */
+.rbc-time-view {
+  border-color: #eee;
+}
+
+/* En-tête horaire (supprimé ici) */
+.rbc-time-header {
+  display: none;
+}
+
+/* Contenu du calendrier (où s’affichent les événements) */
+.rbc-time-content {
+  border: none;
+}
+
+/* Colonne horaire à gauche */
+.rbc-time-gutter .rbc-time-column {
+  font-size: 12px;
+}
+
+/* Espacement intérieur colonne horaires */
+.rbc-time-gutter .rbc-time-column.rbc-timeslot-group {
+  padding: 0 20px;
+}
+
+/* Groupes d’heures (ex: 8h-9h) */
+.rbc-timeslot-group {
+  background-color: #f7fdff;
+}
+
+/* Style global de la journée */
+.rbc-day-slot {
+  font-size: 14px;
+}
+
+/* ----- Événements (cours) ----- */
+.rbc-event {
+  background-color: gray;                    /* Couleur par défaut (surchargée ci-dessous) */
+  color: black;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  width: 99%;
+}
+
+/* Option : 1ère occurrence → couleur spécifique */
+.rbc-event:nth-child(1) {
+  background-color: #e2f8ff;
+}
+
+.rbc-event:nth-child(2) {
+  background-color: #fefce8;
+}
+
+.rbc-event:nth-child(3) {
+  background-color: #f2f1ff;
+}
+
+.rbc-event:nth-child(4) {
+  background-color: #fdf2fb;
+}
+
+.rbc-event:nth-child(5) {
+  background-color: #e2f8ff;
+}
+
+/* Etiquette horaire sur l’événement */
+.rbc-event-label {
+  color: gray;
+  margin-bottom: 5px;
+}
